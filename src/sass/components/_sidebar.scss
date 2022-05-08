@@ -1,0 +1,57 @@
+.sidebar {
+    width: 40%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    &__places {
+        width: 100%;
+        flex: 1;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        &__place {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            font-size: 2rem;
+            border-radius: 1rem;
+            // box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
+            border: 1px solid #ccc;
+            padding: 2rem;
+            .information {
+                min-width: 50rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+                &__title {
+                    min-height: 3.1rem;
+                }
+
+                &__description {
+                    min-height: 5.1rem;
+                }
+            }
+            .action {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 10rem;
+                .seeMap {
+                    width: 5rem;
+                    height: 5rem;
+                    font-size: 2rem;
+                    color: rgb(0, 0, 0);
+                    border-radius: 0.8rem;
+                    box-shadow: 1px 1px 1px silver;
+                    margin-left: auto;
+
+                    &:hover {
+                        background-color: rgb(0, 0, 0, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}
